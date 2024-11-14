@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nobile", sans-serif;
+}
+
+
+
+body {
+    background-image: url("/obrazky/background.png");
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: black;
+    margin: 0;
+    width: 100%;
+}
+
+.hero {
+    position: relative; /* Make the hero section the positioning context */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    height: 60vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.dd {
+    position: absolute; /* Position it absolutely within the hero section */
+    top: 0; /* Align to the top of the hero section */
+    left: 0; /* Align to the left of the hero section */
+    width: 100%; /* Full width of the hero section */
+    height: 100%; /* Full height of the hero section */
+    z-index: -1; /* Keep it behind the header */
+    background: transparent; /* Make the Spline viewer background transparent */
+}
+
+
+.arrow2{
+    display: inline-block;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.arrow-animate{
+    transition: transform 3s ease;
+    animation: show 3s forwards;
+}
+
+.arrow2 a img{
+    width: 4vw;
+    height: 8vh;
+}
+
+.animate-dd{
+    transition: transform 3s ease;
+    animation: show 3s forwards;
+}
+
+spline-viewer .visible {
+      opacity: 1; /* Make it visible */
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero {
+    z-index: 1;
+    margin-top: 15vh;
+    margin-bottom:0;
+    position: relative;
+    overflow: hidden;
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    background: transparent;
+}
+
+.change {
+    margin-top: 0;
+}
+
+.hero h1 {
+    z-index: 1;
+    font-size: 30vh;
+    transition: transform 1s ease;
+    display: inline-block;
+    transform: scale(1);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    position: fixed; /* Make header fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+nav a:hover {
+    transform: scale(1.3); /* Scale effect on hover */
+}
+
+
+
+nav button {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+nav button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+
+header h1 {
+    font-family: "Kalnia Glaze", serif;
+    font-weight: 400;
+    color: blue;
+    font-size: 1rem; /* Adjusted for responsiveness */
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+    position: fixed;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+
+header p {
+    font-size: 1rem;
+}
+
+
+
+
+
+nav button:hover {
+    cursor: pointer;
+}
+
+.success-stories {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    padding: 50px 0;
+    text-align: center;
+    background: transparent;
+}
+
+
+.success-stories h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+   
+}
+
+.projects {
+    
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.project {
+    height:50vh;
+    width:50vw;
+    height: 60vh;
+    background-color: white;
+    
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+iframe{
+    width: 50vw;
+    height: 100vh;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.contact {
+    background-color: transparent;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modry{
+    color: blue;
+}
+
+
+
+
+.modry::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.modry:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.ukol::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: width .3s;
+}
+
+.ukol:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+.project {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project.active {
+    display: flex;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: transform 0.5s ease;
+}
+.arrow:hover{
+    transform: scale(1.3);
+}
+
+.arrow:hover {
+    color: red;
+}
+
+.animate-heading {
+    transition: transform 3s ease;
+    animation: grow 3s forwards;
+}
+
+
+
+@keyframes grow {
+    0% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(3.0);
+        opacity: 1;
+    }
+}
+
+.animate-nav {
+    transition: transform 3s ease;
+    animation: show 3s forwards;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .hero h1 {
+        font-size: 20vh;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .success-stories h2 {
+        font-size: 2rem;
+    }
+    .project {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 15vh;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+    .projects {
+        padding: 0 20px;
+    }
+    .success-stories h2 {
+        font-size: 1.5rem;
+    }
+    .contact h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 10vh;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+    .success-stories h2 {
+        font-size: 1.2rem;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+    nav a,
+    nav button {
+        font-size: 0.9rem;
+    }
+}
